@@ -1,9 +1,9 @@
 body{
     margin: 0;
-    background-image: url(./images/pexels-lum3n-44775-406014.jpg);
+    background-image: url(/images/pexels-lum3n-44775-406014.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 69%;
+    background-size: 100% auto;
+    background-position: center 70%;
     background-attachment: fixed;
 }
 
@@ -11,21 +11,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: 25vh;
 }
 
 #clock{
-    font-family: cursive;
-    font-size: clamp(2rem, 10vw, 12rem);
+    font-family: monospace;
+    font-size: clamp(6rem, 10vw, 12rem);
     font-weight: bold;
     text-align: center;
     text-decoration: none;
 }
 
 .meridiem{
-    font-size: 0.2em;
+    font-size: 25%;
     margin: 0;
     padding: 0;
-    vertical-align: 3.5em;
-    margin: 0px 7px;
+    vertical-align: 2.5em;
+}
+
+@media{
+  body {
+    background-position: center bottom;
+  }
 }
